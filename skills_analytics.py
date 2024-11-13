@@ -136,6 +136,7 @@ def plot_radar_chart(data, metrics, title):
     ax.spines['polar'].set_zorder(1)
     ax.spines['polar'].set_color('lightgrey')
 
+
     color_palette = ['#339F00', '#0500FF', '#9CDADB', '#FF00DE']
 
     for idx, (i, row) in enumerate(data.iterrows()):
