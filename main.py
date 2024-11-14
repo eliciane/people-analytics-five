@@ -5,7 +5,7 @@ import plotly.express as px
 #import numpy as np
 #import warnings
 
-pd.set_option('display.expand_frame_repr', False)
+#pd.set_option('display.expand_frame_repr', False)
 #warnings.filterwarnings("ignore")
 
 # Set the app title
