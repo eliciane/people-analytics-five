@@ -1,8 +1,8 @@
 import pandas as pd
 import streamlit as st
 import plotly.express as px
-import matplotlib.pyplot as plt
-import numpy as np
+#import matplotlib.pyplot as plt
+#import numpy as np
 #import warnings
 
 pd.set_option('display.expand_frame_repr', False)
