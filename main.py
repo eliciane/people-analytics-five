@@ -21,8 +21,13 @@ df = st.dataframe(pd.read_csv('dados/Mapeamento_Competencias_08nov.csv'))
 #df = pd.read_csv(file_path)
 
 # Skills Analytics Prep
-df_equipe = df.iloc[:,1:3] # colunas ID e equipe
-df_analy = df.iloc[:,19:26] # colunas BI
+df_equipe = df[['ID', 'Squad']].copy() # colunas ID e equipe
+df_analy = df[['Analy_ PREP _Alteryx', 'Analy_ PREP _SAS',
+       'Analy_ PREP _Pentaho Data Integration', 'Analy_ PREP _Power Center',
+       'Analy_ PREP _SAP Analytics Cloud',
+       'Analy_ PREP _Oracle Data Integration',
+       'Analy_ PREP _SQL Server Integration Services']].copy()
+#df_analy = df.iloc[:,19:26] # colunas BI
 df_concat_analy = pd.concat([df_equipe, df_analy], axis = 1)
 print(df_concat_analy.head(4)) # imprime somente as quatro primeiras linhas
 
