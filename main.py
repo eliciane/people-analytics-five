@@ -3,10 +3,10 @@ import streamlit as st
 import plotly.express as px
 import matplotlib.pyplot as plt
 import numpy as np
-import warnings
+#import warnings
 
 pd.set_option('display.expand_frame_repr', False)
-warnings.filterwarnings("ignore")
+#warnings.filterwarnings("ignore")
 
 # Set the app title
 st.title('Mapeamento das Competências')
