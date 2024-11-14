@@ -46,7 +46,7 @@ st.title('Analytics Prep')
 df_concat_analy = st.dataframe(pd.read_csv('dados/analy_prep.csv'))
 
 st.subheader("Dados: Skills Analytics Prep")
-st.write(df_concat_analy)
+st.dataframe(df_concat_analy)
 
 #renomear colunas
 df_concat_analy = df_concat_analy.rename(columns={'Analy_ PREP _Alteryx': 'AP_Alteryx',
