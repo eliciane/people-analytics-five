@@ -31,11 +31,11 @@ df = st.dataframe(pd.read_csv('dados/Mapeamento_Competencias_08nov.csv'))
 #df_equipe = df_equipe.to_csv('/home/eliciane/PycharmProjects/people-analytics-five/dados/df_equipe.csv', index=False)
 #df_analy = df_analy.to_csv('/home/eliciane/PycharmProjects/people-analytics-five/dados/df_analy.csv', index=False)
 
-df_equipe= pd.read_csv('/home/eliciane/PycharmProjects/people-analytics-five/dados/df_equipe.csv')
-df_analy = pd.read_csv('/home/eliciane/PycharmProjects/people-analytics-five/dados/df_analy.csv')
+#df_equipe= pd.read_csv('/home/eliciane/PycharmProjects/people-analytics-five/dados/df_equipe.csv')
+#df_analy = pd.read_csv('/home/eliciane/PycharmProjects/people-analytics-five/dados/df_analy.csv')
 
-df = st.dataframe(pd.read_csv('/dados/df_equipe.csv'))
-df = st.dataframe(pd.read_csv('/dados/df_analy.csv'))
+df_equipe = st.dataframe(pd.read_csv('/dados/df_equipe.csv'))
+df_analy = st.dataframe(pd.read_csv('/dados/df_analy.csv'))
 
 df_concat_analy = pd.concat([df_equipe, df_analy], axis = 1)
 
