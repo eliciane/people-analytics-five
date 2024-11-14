@@ -15,10 +15,10 @@ st.title('Analytics Prep')
 #importar dataset
 #file_path = "/home/eliciane/PycharmProjects/people-analytics-five/dados/Mapeamento_Competencias_08nov.csv"
 
-file_path = "\dados\Mapeamento_Competencias_08nov.csv"
+#file_path = "\dados\Mapeamento_Competencias_08nov.csv"
 
-#df = st.dataframe(pd.read_csv(r'/dados/Mapeamento_Competencias_08nov.csv'))
-df = pd.read_csv(file_path)
+df = st.dataframe(pd.read_csv('dados/Mapeamento_Competencias_08nov.csv'))
+#df = pd.read_csv(file_path)
 
 # Skills Analytics Prep
 df_equipe = df.iloc[:,1:3] # colunas ID e equipe
