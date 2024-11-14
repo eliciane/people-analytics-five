@@ -15,7 +15,7 @@ st.title('Analytics Prep')
 #importar dataset
 #file_path = "/home/eliciane/PycharmProjects/people-analytics-five/dados/Mapeamento_Competencias_08nov.csv"
 
-#file_path = "\dados\Mapeamento_Competencias_08nov.csv"
+
 
 df = st.dataframe(pd.read_csv('dados/Mapeamento_Competencias_08nov.csv'))
 #df = pd.read_csv(file_path)
@@ -27,9 +27,18 @@ df_analy = df[['Analy_ PREP _Alteryx', 'Analy_ PREP _SAS',
        'Analy_ PREP _SAP Analytics Cloud',
        'Analy_ PREP _Oracle Data Integration',
        'Analy_ PREP _SQL Server Integration Services']].copy()
+
 #df_analy = df.iloc[:,19:26] # colunas BI
+#df_concat_analy = pd.concat([df_equipe, df_analy], axis = 1)
+#print(df_concat_analy.head(4)) # imprime somente as quatro primeiras linhas
+
+#df_equipe = df_equipe.to_csv('/home/eliciane/PycharmProjects/people-analytics-five/dados/df_equipe.csv', index=False)
+#df_analy = df_analy.to_csv('/home/eliciane/PycharmProjects/people-analytics-five/dados/df_analy.csv', index=False)
+
+df_equipe= pd.read_csv('/home/eliciane/PycharmProjects/people-analytics-five/dados/df_analy.csv')
+df_analy = pd.read_csv('/home/eliciane/PycharmProjects/people-analytics-five/dados/df_equipe.csv')
+
 df_concat_analy = pd.concat([df_equipe, df_analy], axis = 1)
-print(df_concat_analy.head(4)) # imprime somente as quatro primeiras linhas
 
 st.subheader("Dados: Skills Analytics Prep")
 st.dataframe(df_concat_analy)
