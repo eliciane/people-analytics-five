@@ -1,4 +1,4 @@
-ID,Squad,Analy_ PREP _Alteryx,Analy_ PREP _SAS,Analy_ PREP _Pentaho Data Integration,Analy_ PREP _Power Center,Analy_ PREP _SAP Analytics Cloud,Analy_ PREP _Oracle Data Integration,Analy_ PREP _SQL Server Integration Services
+ID,Squad,AP_Alteryx,AP_SAS,AP_PentahoDataInteg,AP_PowerCenter,AP_SAPAnalyticsCloud,AP_OracleDataInteg,AP_SQLServerIntegServ
 1,Jedis,3.0,3.0,3.0,3.0,2.0,2.0,4.0
 2,Transformers,,,,,,,
 3,Jedis,1.0,1.0,1.0,1.0,1.0,1.0,1.0
