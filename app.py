@@ -12,4 +12,4 @@ st.title('Analytics Prep')
 #importar dataset#
 df = st.dataframe(pd.read_csv('analy_prep.csv'))
 st.subheader("Dados: Skills Analytics Prep")
-st.write(df)
+st.dataframe(df)
